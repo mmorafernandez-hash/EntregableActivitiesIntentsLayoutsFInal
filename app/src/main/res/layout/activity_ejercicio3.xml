@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ejercicio3Activity">
+
+    <!-- boton de arriba -->
+    <Button
+        android:id="@+id/btnespana"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PULSAME PARA AVANZAR"
+        android:textSize="16sp"
+        android:backgroundTint="@color/bton"
+        android:textColor="@color/negro" />
+
+    <!-- parte blanca y roja  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Lado izquierdo blanco -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
+
+        <!-- Centro rojo -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF0000" />
+
+        <!-- Lado derecho blanco -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- mitad de abajo verticala -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Franja superior amarilla -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFE600" />
+
+        <!-- Franja central roja -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FF0000" />
+
+        <!-- Franja inferior amarilla -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFE600" />
+
+    </LinearLayout>
+
+</LinearLayout>
